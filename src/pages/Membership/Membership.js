@@ -1,10 +1,11 @@
 import React from 'react';
-import { Card, Col, Container, Row, Modal } from 'react-bootstrap';
+import { Card, Col, Container, Row } from 'react-bootstrap';
 import analyticsSVG from '../../assets/analytics.svg';
 import collectingSVG from '../../assets/collecting.svg';
 import memorySVG from '../../assets/memory.svg';
 import teachingSVG from '../../assets/teaching.svg';
 import "./Membership.css";
+import InfoModal from '../../components/Modal/Modal';
 
 class Membership extends React.Component {
   render() {
@@ -53,7 +54,10 @@ class Membership extends React.Component {
                       <p style={{ textAlign: 'center' }}>
                           Learn industry standards and refine your skills in teams{' '}
                       </p>
-                      
+                      <InfoModal
+                        Title={"Technical Workshops"}
+                        TextBody={""}
+                      />
                     </Card.Body>
                     </Card>
                 </Col>
@@ -72,7 +76,10 @@ class Membership extends React.Component {
                           Connect with companies from all over the world hiring at
                           UH
                       </p>
-                      <button className="btn btn-primary">Learn More</button>
+                      <InfoModal
+                        Title={"Information Sessions"}
+                        TextBody={"Our information sessions often hosted by Fortune 100 companies, cover a broad spectrum of topics such as resume critiques, career fair preparation, mock interviews and much more."}
+                      />
                     </Card.Body>
                     </Card>
                 </Col>
@@ -90,7 +97,10 @@ class Membership extends React.Component {
                       </div>
                       <Card.Title>Career Fair Preparation</Card.Title>
                       <p>Practice with mock interviews and resume building</p>
-                      <button className="btn btn-primary">Learn More</button>
+                      <InfoModal
+                        Title={"Career Fair Preparation"}
+                        TextBody={"Our programming challenges offer our members a chance to showcase their problem solving skills in a high energy environment, compete with their peers, and earn prizes."}
+                      />
                     </Card.Body>
                     </Card>
                 </Col>
@@ -112,7 +122,10 @@ class Membership extends React.Component {
                           tutors who are focused on member success lmk what you
                           think
                       </p>
-                      <button className="btn btn-primary">Learn More</button>
+                      <InfoModal
+                        Title={"Tutoring and Academic Support"}
+                        TextBody={"In addition to these events, we also provide weekly tutoring and academic support. CougarCS also has a far reaching network of alumni who are industry professionals and are always looking to connect with current members!"}
+                      />
                     </Card.Body>
                     </Card>
                 </Col>
@@ -170,48 +183,6 @@ class Membership extends React.Component {
               </Row>
           </Container>
         </Container>
-
-        
-
-        <Modal.Dialog>
-          <Modal.Header>Information Sessions</Modal.Header>
-          <Modal.Body>
-            Technical workshops and information sessions, often hosted
-            by Fortune 100 companies, cover a broad spectrum of topics
-            such as resume critiques, career fair preparation, mock
-            interviews and much more.
-          </Modal.Body>
-          <Modal.Footer>
-            <button className="btn btn-danger">Close</button>
-          </Modal.Footer>
-        </Modal.Dialog>
-
-        <Modal.Dialog>
-          <Modal.Header>Career Fair Preparation</Modal.Header>
-          <Modal.Body>
-            Our programming challenges offer
-            our members a chance to showcase their problem solving
-            skills in a high energy environment, compete with their
-            peers, and earn prizes. 
-          </Modal.Body>
-          <Modal.Footer>
-            <button className="btn btn-danger">Close</button>
-          </Modal.Footer>
-        </Modal.Dialog>
-
-        <Modal.Dialog>
-          <Modal.Header>Tutoring and Academic Support</Modal.Header>
-          <Modal.Body>
-            In addition to these events, we also
-            provide weekly tutoring and academic support. CougarCS also
-            has a far reaching network of alumni who are industry
-            professionals and are always looking to connect with current
-            members!
-          </Modal.Body>
-          <Modal.Footer>
-            <button className="btn btn-danger">Close</button>
-          </Modal.Footer>
-        </Modal.Dialog>
       </div>
     );
   }
