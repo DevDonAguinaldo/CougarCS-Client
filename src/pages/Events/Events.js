@@ -13,7 +13,7 @@ class Events extends React.Component {
         /> */}
 
         <iframe
-          title='CougarCS Calendar'
+          title="Google Calendar"
           src={
             'https://calendar.google.com/calendar/embed?src=aeu0ag4i5a7aag0hkvco4goung%40group.calendar.google.com&ctz=America%2FChicago'
           }

@@ -11,16 +11,16 @@ import Membership from './pages/Membership/Membership';
 import Points from './pages/Points/Points';
 
 function App() {
-   return (
-      <Router>
-         <NavBar />
-         <Route path="/" exact component={Home} />
-         <Route path="/about/" component={About} />
-         <Route path="/membership/" component={Membership} />
-         <Route path="/events/" component={Events} />
-         <Route path="/careerfair/" component={Careerfair} />
-      </Router>
-   );
+  return (
+    <Router>
+      <NavBar />
+      <Route path="/" exact component={Home} />
+      <Route path="/about/" component={About} />
+      <Route path="/membership/" component={Membership} />
+      <Route path="/events/" component={Events} />
+      <Route path="/careerfair/" component={Careerfair} />
+    </Router>
+  );
 }
 
 export default App;
