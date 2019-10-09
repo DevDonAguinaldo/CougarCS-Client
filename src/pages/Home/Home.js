@@ -1,6 +1,4 @@
-
-import React, { Component } from 'react'
-import Typed from 'typed.js';
+import React, { useEffect } from 'react';
 import { Button, ButtonToolbar } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import Typed from 'typed.js';
@@ -38,6 +36,8 @@ const Home = () => {
           </LinkContainer>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
+export default Home;
